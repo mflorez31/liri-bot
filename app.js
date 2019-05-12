@@ -79,7 +79,6 @@ function movie(inputs){
    var queryUrl = "http://www.omdbapi.com/?t=" + MovieName + "&y=&plot=short&apikey=trilogy";
 
    request.get(queryUrl, function(error, response, body) {     
-       console.log(body)
     if (!error && response.statusCode === 200) {
             var myMovie =
              "-----------------------------------------------------------------------" + "\r\n" +
